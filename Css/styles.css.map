@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../Sass/styles.scss","../Sass/_MixinFunc.scss"],"names":[],"mappings":"AACA;ECeI;EACA;EACA,iBDhBkC;;AAClC;EACI;IACG;;;;AAIX;ECAI,ODCiC;ECAjC;EACA;EACA;EDDA;ECTI;EACA;EACA","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../Sass/styles.scss","../Sass/_MixinFunc.scss"],"names":[],"mappings":"AACA;ECeI;EACA;EACA,iBDhBkC;;AAClC;EACI;ICKJ,ODJwC;ICKxC,QDL8C;ICM9C;IACA;;;;ADHJ;ECAI,ODCiC;ECAjC;EACA;EACA;EDDA;ECTI;EACA;EACA","file":"styles.css"}
