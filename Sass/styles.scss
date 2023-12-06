@@ -1,9 +1,9 @@
 @use 'MixinFunc';
 body{
     @include MixinFunc.create-flexbox(center);
-    @media (min-width:400px) {
+    @media (max-width:400px) {
         .main{
-           @include MixinFunc.sizeContainer(800px,500px)
+           @include MixinFunc.sizeContainer(400px,400px)
         }
     }
 }
