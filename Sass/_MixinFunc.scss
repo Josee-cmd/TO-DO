@@ -1,0 +1,19 @@
+@mixin arreglar-imagen(){
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center
+    };
+}
+
+@mixin sizeContainer($width, $heigth){
+    width: $width;
+    height: $heigth;
+    border: 1px solid #000;
+}
+
+@mixin create-flexbox($justufy){
+    display: flex;
+    align-items: center;
+    justify-content: $justufy;
+}
