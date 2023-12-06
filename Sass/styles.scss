@@ -1,7 +1,7 @@
 @use 'MixinFunc';
 body{
     @include MixinFunc.create-flexbox(center);
-    padding-top: 50px;
+    margin-top: 5%;
     @media (max-width:700px) {
         .main{
             @include MixinFunc.sizeContainer(300px,300px)
