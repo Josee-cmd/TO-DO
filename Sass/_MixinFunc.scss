@@ -10,6 +10,7 @@
     width: $width;
     height: $heigth;
     border: 1px solid #000;
+    margin-top: 5%;
 }
 
 @mixin create-flexbox($justufy){
