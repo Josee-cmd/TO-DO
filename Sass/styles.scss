@@ -8,7 +8,7 @@ body{
     }
 }
 .main{
-    @include MixinFunc.sizeContainer(600px,600px);
+    @include MixinFunc.sizeContainer(100px,100px);
     background-image: url("../Img/Front-Pages.jpeg");
     @include MixinFunc.arreglar-imagen;
 }
