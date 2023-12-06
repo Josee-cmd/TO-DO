@@ -3,12 +3,12 @@ body{
     @include MixinFunc.create-flexbox(center);
     @media (max-width:700px) {
         .main{
-           @include MixinFunc.sizeContainer(100px,100px)
+           @include MixinFunc.sizeContainer(350px,350px)
         }
     }
 }
 .main{
-    @include MixinFunc.sizeContainer(100px,100px);
+    @include MixinFunc.sizeContainer(500px,500px);
     background-image: url("../Img/Front-Pages.jpeg");
     @include MixinFunc.arreglar-imagen;
 }

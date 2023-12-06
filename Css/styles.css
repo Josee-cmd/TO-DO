@@ -5,18 +5,18 @@ body {
 }
 @media (max-width: 700px) {
   body .main {
-    width: 100px;
-    height: 100px;
+    width: 350px;
+    height: 350px;
     border: 1px solid #000;
-    margin-top: 3%;
+    margin-top: 2%;
   }
 }
 
 .main {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
   border: 1px solid #000;
-  margin-top: 3%;
+  margin-top: 2%;
   background-image: url("../Img/Front-Pages.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
