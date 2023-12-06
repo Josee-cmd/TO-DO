@@ -3,7 +3,7 @@ body{
     @include MixinFunc.create-flexbox(center);
     @media (max-width:700px) {
         .main{
-           @include MixinFunc.sizeContainer(400px,400px)
+           @include MixinFunc.sizeContainer(100px,100px)
         }
     }
 }
