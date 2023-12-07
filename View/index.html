@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO</title>
+    <link rel="icon" href="../Icons/lista-de-verificacion.png">
     <link rel = "stylesheet" href = "../Css/styles.css">
 </head>
 <body>
@@ -20,5 +21,12 @@
            <img src="../Icons/flecha-correcta.png" alt="Image not avaliable" class = "main__button--active">
         </div>
     </main>
+
+    <script>
+        let button = document.querySelector('.main__button');
+        button.addEventListener('click',()=>{
+            location.href = 'sign-up.html';
+        })
+    </script>
 </body>
 </html>

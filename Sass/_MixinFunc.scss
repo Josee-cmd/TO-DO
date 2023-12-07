@@ -10,11 +10,18 @@
     width: $width;
     height: $heigth;
     margin-top: 3%;
+    border: 1px solid #000;
 }
 
 @mixin create-flexbox($justufy){
     display: flex;
     align-items: center;
     justify-content: $justufy;
+}
+
+@mixin arreglar-inputs($width){
+    width: $width;
+    border: 0px;
+    border-bottom: 3px solid #000;            
 }
 

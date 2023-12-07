@@ -8,6 +8,7 @@ body {
     width: 350px;
     height: 350px;
     margin-top: 3%;
+    border: 1px solid #000;
   }
   body h2 {
     font-size: 15px;
@@ -26,6 +27,7 @@ body {
   width: 550px;
   height: 550px;
   margin-top: 3%;
+  border: 1px solid #000;
   background-image: url("../Img/Front-Pages.jpeg");
   background-size: cover;
   background-repeat: no-repeat;

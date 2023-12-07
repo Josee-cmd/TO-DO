@@ -1,0 +1,74 @@
+@use 'MixinFunc';
+@use '_MixinButtons';
+body {
+    @include MixinFunc.create-flexbox(center);
+    background-color: rgb(244, 244, 244);
+}
+
+.main {
+    @include MixinFunc.sizeContainer(500px, 500px);
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 1px 5px 30px 15px rgba(0, 0, 0, 0.3); /* Sombra: offsetX offsetY blurRadius color */
+
+    h1{
+        position: relative;
+        right: 8.6rem;
+    }
+    &__form {
+        position: absolute;
+        &--inputs {
+            margin-top: 5em;
+            position: relative;
+            padding-left: 80px;
+
+            &--action {
+                background: none;
+                color: #000;
+                border: 0px;
+                outline: 0px;
+                margin-right: 10px;
+                margin-top: 2em;
+                @include MixinFunc.arreglar-inputs(15em);
+                @for $iterador from 1 through 2 {
+                    &-label-#{$iterador} {
+                        @if $iterador==1 {
+                            position: absolute;
+                            right: 438px;
+                        }
+                        @else {
+                            position: relative;
+                            right: 215px;
+                            bottom: 1.7em;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        &--inputs--div {
+            margin-top: 5rem;
+            padding-left: 80px;
+
+            &--action {
+                display: block;
+                @include MixinFunc.arreglar-inputs(31.4em);
+                background: none;
+                margin-top: 5em;
+                outline: 0px;
+                @for $iterador from 1 through 2 {
+                    &-label-#{$iterador} {
+                      position: relative;
+                        bottom: 4em;
+                    }
+                }
+
+            }
+        }
+    }
+}

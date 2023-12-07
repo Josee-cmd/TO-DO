@@ -1,0 +1,93 @@
+.main--buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main--buttons button {
+  width: 10em;
+  padding: 0.5em;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.main--buttons h5 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.main--buttons h5:hover {
+  color: rgb(0, 150, 136);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 244, 244);
+}
+
+.main {
+  width: 500px;
+  height: 500px;
+  margin-top: 3%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 1px 5px 30px 15px rgba(0, 0, 0, 0.3); /* Sombra: offsetX offsetY blurRadius color */
+}
+.main h1 {
+  position: relative;
+  right: 8.6rem;
+}
+.main__form {
+  position: absolute;
+}
+.main__form--inputs {
+  margin-top: 5em;
+  position: relative;
+  padding-left: 80px;
+}
+.main__form--inputs--action {
+  background: none;
+  color: #000;
+  border: 0px;
+  outline: 0px;
+  margin-right: 10px;
+  margin-top: 2em;
+  width: 15em;
+  border: 0px;
+  border-bottom: 3px solid #000;
+}
+.main__form--inputs--action-label-1 {
+  position: absolute;
+  right: 438px;
+}
+.main__form--inputs--action-label-2 {
+  position: relative;
+  right: 215px;
+  bottom: 1.7em;
+}
+.main__form--inputs--div {
+  margin-top: 5rem;
+  padding-left: 80px;
+}
+.main__form--inputs--div--action {
+  display: block;
+  width: 31.4em;
+  border: 0px;
+  border-bottom: 3px solid #000;
+  background: none;
+  margin-top: 5em;
+  outline: 0px;
+}
+.main__form--inputs--div--action-label-1 {
+  position: relative;
+  bottom: 4em;
+}
+.main__form--inputs--div--action-label-2 {
+  position: relative;
+  bottom: 4em;
+}
+
+/*# sourceMappingURL=--Sign-up.css.map */

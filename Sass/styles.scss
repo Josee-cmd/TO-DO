@@ -2,7 +2,6 @@
 
 body {
     @include MixinFunc.create-flexbox(center);
-
     @media (max-width:720px) {
         .main {
             @include MixinFunc.sizeContainer(350px, 350px);
