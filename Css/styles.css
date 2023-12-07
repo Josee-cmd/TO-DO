@@ -10,11 +10,15 @@ body {
     margin-top: 3%;
   }
   body h2 {
-    font-size: 17px;
+    font-size: 15px;
   }
   body li {
     position: relative;
     bottom: 100px;
+    margin-right: 10%;
+  }
+  body .main__button {
+    padding-right: 15px;
   }
 }
 

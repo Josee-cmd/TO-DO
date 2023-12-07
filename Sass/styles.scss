@@ -8,11 +8,15 @@ body {
             @include MixinFunc.sizeContainer(350px, 350px);
         }
         h2{
-            font-size: 17px
+            font-size: 15px
         }
         li{
             position: relative;
-            bottom: 100px
+            bottom: 100px;
+            margin-right: 10%
+        }
+        .main__button{
+            padding-right: 15px
         }
     }
 }
