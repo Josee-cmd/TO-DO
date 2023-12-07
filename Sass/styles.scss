@@ -8,7 +8,7 @@ body {
             @include MixinFunc.sizeContainer(350px, 350px);
         }
         h2{
-            font-size: 20px
+            font-size: 17px
         }
         li{
             position: relative;
@@ -16,7 +16,6 @@ body {
         }
     }
 }
-
 .main {
     @include MixinFunc.sizeContainer(550px, 550px);
     background-image: url("../Img/Front-Pages.jpeg");
