@@ -3,24 +3,66 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   body .main {
     width: 350px;
     height: 350px;
-    border: 1px solid #000;
-    margin-top: 2%;
+    margin-top: 3%;
+  }
+  body h2 {
+    font-size: 20px;
+  }
+  body li {
+    position: relative;
+    bottom: 100px;
   }
 }
 
 .main {
-  width: 500px;
-  height: 500px;
-  border: 1px solid #000;
-  margin-top: 2%;
+  width: 550px;
+  height: 550px;
+  margin-top: 3%;
   background-image: url("../Img/Front-Pages.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.main__h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+.main__nav--active {
+  list-style: none;
+  line-height: 40px;
+  position: relative;
+  top: 450px;
+}
+.main__nav--active--a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  border: 1px solid #acacac;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px 5px 5px 5px;
+}
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  left: 10%;
+  top: 17%;
+}
+.main__button--active {
+  width: 7%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

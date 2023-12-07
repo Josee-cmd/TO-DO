@@ -9,8 +9,7 @@
 @mixin sizeContainer($width, $heigth){
     width: $width;
     height: $heigth;
-    border: 1px solid #000;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 @mixin create-flexbox($justufy){
@@ -18,3 +17,4 @@
     align-items: center;
     justify-content: $justufy;
 }
+

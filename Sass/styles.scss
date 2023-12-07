@@ -1,14 +1,60 @@
 @use 'MixinFunc';
-body{
+
+body {
     @include MixinFunc.create-flexbox(center);
-    @media (max-width:700px) {
-        .main{
-           @include MixinFunc.sizeContainer(350px,350px)
+
+    @media (max-width:720px) {
+        .main {
+            @include MixinFunc.sizeContainer(350px, 350px);
+        }
+        h2{
+            font-size: 20px
+        }
+        li{
+            position: relative;
+            bottom: 100px
         }
     }
 }
-.main{
-    @include MixinFunc.sizeContainer(500px,500px);
+
+.main {
+    @include MixinFunc.sizeContainer(550px, 550px);
     background-image: url("../Img/Front-Pages.jpeg");
     @include MixinFunc.arreglar-imagen;
+
+    &__h2 {
+        @include MixinFunc.create-flexbox(center);
+        font-weight: 100;
+    }
+
+    &__nav {
+        &--active {
+            list-style: none;
+            line-height: 40px;
+            position: relative;
+            top: 450px;
+            &--a {
+                text-decoration: none;
+                color: #000;
+                @include MixinFunc.create-flexbox(center);
+                gap: 1em;
+                border: 1px solid #acacac;
+                width: auto;
+                height: auto;
+                margin-top: 10px;
+                border-radius: 5px 5px 5px 5px;
+            }
+        }
+    }
+
+    &__button{
+        @include MixinFunc.create-flexbox(flex-end);
+        position: relative;
+        left: 10%;
+        top: 17%;
+        &--active{
+            width: 7%;
+            cursor: pointer;
+        }
+    }
 }
