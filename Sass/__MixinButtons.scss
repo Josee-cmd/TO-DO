@@ -10,13 +10,21 @@
         background: #000;
         color:#fff;
         cursor: pointer;
+        letter-spacing: 2px;
     }
-    h5{
+    a{
         font-size: 14px;
-        font-weight: 100;
+        color: #fff;
+        width: 8em;
+        padding: 0.5em;
+        border-radius: 20px;
+        background: #000;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 2px;
     }
 
-    h5:hover{
-        color:rgb(0, 150, 136);
+    a:hover{
+        background: rgb(0, 150, 136);
     }
 }
