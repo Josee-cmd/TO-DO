@@ -1,0 +1,191 @@
+@use 'MixinFunc';
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    font-weight: 100;
+    overflow: hidden;
+}
+
+.nav {
+    width: 20rem;
+    height: 46.5rem;
+    background-color: rgb(243, 243, 243);
+    padding-left: 1em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    &__header {
+        &__img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            background-image: url("../Img/maxresdefault.jpg");
+            @include MixinFunc.arreglar-imagen();
+            margin-left: 1em;
+        }
+
+        input {
+            margin-top: 15px;
+            width: 18em;
+            padding: .5em;
+            margin-left: 1em;
+            outline: none;
+            box-shadow: 0.5px 1px 1px rgb(0, 0, 0, 0.3);
+            opacity: 0.80;
+            border: 1px solid rgb(199, 199, 199);
+            border-radius: 5px 5px 5px 5px;
+
+        }
+    }
+
+    &__ul {
+        list-style: none;
+        margin-top: 5px;
+
+        &--li {
+            margin-top: 1em;
+            width: 90%;
+            height: 2em;
+            display: flex;
+            align-items: center;
+            padding-left: 1em;
+            cursor: pointer;
+        }
+
+        &--li:hover {
+            background: rgb(234, 234, 234);
+        }
+    }
+
+    &__div {
+        display: flex;
+        align-items: center;
+        margin: 105% 0%;
+        width: 90%;
+        cursor: pointer;
+        padding-left: 1em;
+
+        h1 {
+            padding-right: 5px;
+        }
+    }
+
+    &__div:hover {
+        background: rgb(234, 234, 234);
+    }
+}
+
+.section {
+    width: 78.4%;
+    height: 44rem;
+    margin-left: 20.6rem;
+    position: absolute;
+    top: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px solid rgb(242, 242, 242);
+    background: linear-gradient(rgb(51, 120, 127, 0.75), rgb(241, 221, 214, 0.75));
+    h1{
+        position: absolute;
+        color: #fff;
+        margin-bottom: 50%;
+        margin-right: 85%;
+        font-weight: 100;
+    }
+
+    &__p{
+        position: absolute;
+        color: #fff;
+        margin-bottom: 45%;
+        margin-right: 77%;
+        font-size: 15px;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+    &__div {
+        width: 25%;
+        height: 40%;
+        border: 1px solid transparent;
+        background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+        text-align: center;
+        border-radius: 5%;
+
+        img {
+            padding-top: 1em;
+        }
+
+        h2 {
+            padding-top: 1em;
+            text-align: center;
+            color: #fff;
+        }
+
+        p {
+            padding-top: 1em;
+            color: #fff;
+        }
+    }
+
+    input {
+        position: absolute;
+        margin-top: 35rem;
+        padding: 1em;
+        width: 80%;
+        opacity: 0.90;
+        background-color: rgb(242, 242, 242);
+        outline: none;
+        border: 1px solid rgb(199, 199, 199);
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    &--div {
+        position: absolute;
+        margin-left: 85%;
+        margin-bottom: 50%;
+        opacity: 0.70;
+        border-radius: 10%;
+        background-color: rgb(242, 242, 242);
+        text-align: center;
+        cursor: pointer;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    h5 {
+        position: absolute;
+        width: 5rem;
+        height: 1.5rem;
+        background-color: rgb(242, 242, 242);
+        opacity: 0.70;
+        font-weight: 100;
+        @include MixinFunc.create-flexbox(center);
+        border-radius: 8px 8px 8px 8px;
+        margin-left: 85%;
+        margin-bottom: 55.5%;
+        visibility: hidden;
+        transition: 0.5 all ease-in-out;
+
+    }
+
+  
+
+    &--div:hover+h5,&--div:hover{
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+}
