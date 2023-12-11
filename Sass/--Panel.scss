@@ -69,7 +69,7 @@ body {
     &__div {
         display: flex;
         align-items: center;
-        margin: 105% 0%;
+        margin: 85% 0%;
         width: 90%;
         cursor: pointer;
         padding-left: 1em;
@@ -85,9 +85,9 @@ body {
 }
 
 .section {
-    width: 78.4%;
-    height: 44rem;
-    margin-left: 20.6rem;
+    width: 77.9%;
+    height: 39.5rem;
+    margin-left: 19rem;
     position: absolute;
     top: 2.3rem;
     display: flex;
@@ -108,7 +108,7 @@ body {
         position: absolute;
         color: #fff;
         margin-bottom: 45%;
-        margin-right: 77%;
+        margin-right: 76%;
         font-size: 15px;
         font-weight: 100;
         letter-spacing: 1px;
@@ -129,17 +129,19 @@ body {
             padding-top: 1em;
             text-align: center;
             color: #fff;
+            font-size: 21px;
         }
 
         p {
             padding-top: 1em;
             color: #fff;
+            font-size: 14px;
         }
     }
 
     input {
         position: absolute;
-        margin-top: 35rem;
+        margin-top: 32rem;
         padding: 1em;
         width: 80%;
         opacity: 0.90;
