@@ -1,6 +1,9 @@
 @use 'MixinFunc';
 @use '_MixinButtons';
+*{
+    font-family: 'Poppins', sans-serif;
 
+}
 body {
     @include MixinFunc.create-flexbox(center);
     background-color: rgb(244, 244, 244);

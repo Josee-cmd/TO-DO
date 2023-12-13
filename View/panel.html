@@ -6,10 +6,14 @@
     <title>Personal Area</title>
     <link rel="stylesheet" href="../Css/--Panel.css">
     <link rel="icon" href="../Icons/comprobado.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class = "nav">
-        <header class="nav__header">
+        <div class = "nav__data data"></div>
+        <header class="nav__header header">
             <div class = "nav__header__img"></div>
             <input type="text" name="" id="" class = "" placeholder="Buscar">
         </header>
@@ -21,18 +25,20 @@
             <li class = "nav__ul--li">Tareas</li>
         </ul>
         <div class = "nav__div"><h1>+</h1>Nuava lista</div>
+        
     </nav>
     <section class = "section">
         <h1>Mi día</h1>
-        <div class = "section__div">
+        <div class = "section__div div">
             <img src="../Icons/calendario.png" alt="image not available">
             <h2>Concéntrate en tu dia</h2>
             <p>Termina tus tareas con una lista que se actualiza todos los dias</p>
         </div>
-        <input type="text" name="" id="" placeholder="Agregar una tarea">
+        <input type="text" name="" id="input" placeholder="Agregar una tarea" class = "input">
         <div class = "section--div"><img src="../Icons/bombilla.png" alt=""></div>
         <h5>Sugerencias</h5>
         <p class = "section__p p"></p>
+        <ul id="miLista"></ul>
     </section>
     <script src = "../Controller/panel.js"></script>
 </body>

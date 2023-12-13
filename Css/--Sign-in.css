@@ -13,10 +13,10 @@
   letter-spacing: 2px;
 }
 .main--buttons a {
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
-  width: 8em;
-  padding: 0.5em;
+  width: 9em;
+  padding: 0.9em;
   border-radius: 20px;
   background: #000;
   text-align: center;
@@ -25,6 +25,10 @@
 }
 .main--buttons a:hover {
   background: rgb(0, 150, 136);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -47,7 +51,7 @@ body {
 }
 .main h1 {
   position: relative;
-  right: 7.5rem;
+  right: 6.8rem;
 }
 .main__form {
   position: absolute;

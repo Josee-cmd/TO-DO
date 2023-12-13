@@ -1,6 +1,9 @@
 @use 'MixinFunc';
 @use '_MixinButtons';
+*{
+    font-family: 'Poppins', sans-serif;
 
+}
 body {
     @include MixinFunc.create-flexbox(center);
     background-color: rgb(244, 244, 244);
@@ -17,7 +20,7 @@ body {
 
     h1 {
         position: relative;
-        right: 7.5rem;
+        right: 6.8rem;
     }
 
     &__form {
