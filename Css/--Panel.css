@@ -299,15 +299,129 @@ body {
   font-size: 16px;
   padding-right: 1.5em;
 }
-.section .img {
+.section .img0 {
   position: relative;
   margin-left: 97%;
-  bottom: 0.9em;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img1 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img2 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img3 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img4 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img5 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img6 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img7 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img8 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .img9 {
+  position: relative;
+  margin-left: 97%;
+  bottom: 1.3em;
+  cursor: pointer;
+}
+.section .editar0 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar1 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar2 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar3 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar4 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar5 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar6 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar7 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar8 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
+  cursor: pointer;
+}
+.section .editar9 {
+  position: relative;
+  margin-left: 90%;
+  bottom: 3.8em;
   cursor: pointer;
 }
 .section h6 {
   position: relative;
-  bottom: 1.5rem;
+  bottom: 2.5rem;
   font-weight: 100;
 }
 .section .radio {
@@ -316,7 +430,7 @@ body {
   height: 40%;
   border-radius: 50%;
   border: 1px solid #000;
-  bottom: 3.8rem;
+  bottom: 4.7rem;
   right: 1.6rem;
   cursor: pointer;
   display: flex;
@@ -336,6 +450,32 @@ body {
   border-radius: 50%;
   color: #fff;
   font-size: 12px;
+}
+.section .sugerencias {
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  border: 1px solid transparent;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 5%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: scale(0.5s);
+  margin-bottom: 30rem;
+}
+.section .sugerencias img {
+  padding-top: 0.5em;
+}
+.section .sugerencias h3 {
+  color: #fff;
+  font-size: 14px;
+}
+.section .showS {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=--Panel.css.map */

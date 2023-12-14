@@ -229,17 +229,26 @@ body {
             padding-right: 1.5em;
         }
     }
-
-    .img {
-        position: relative;
-        margin-left: 97%;
-        bottom: .9em;
-        cursor: pointer;
+    @for $iterador from 0 through 9{
+        .img#{$iterador}{
+            position: relative;
+            margin-left: 97%;
+            bottom: 1.3em;
+            cursor: pointer;
+        }
+    }
+    @for $iterador from 0 through 9{
+        .editar#{$iterador}{
+            position: relative;
+            margin-left: 90%;
+            bottom: 3.8em;
+            cursor: pointer;
+        }
     }
 
     h6 {
         position: relative;
-        bottom: 1.5rem;
+        bottom: 2.5rem;
         font-weight: 100;
     }
 
@@ -249,7 +258,7 @@ body {
         height: 40%;
         border-radius: 50%;
         border: 1px solid #000;
-        bottom: 3.8rem;
+        bottom: 4.7rem;
         right: 1.6rem;
         cursor: pointer;
         @include MixinFunc.create-flexbox(center);
@@ -268,4 +277,31 @@ body {
         font-size: 12px;
     }
 
+    .sugerencias{
+        position: absolute;
+        width: 25%;
+        height: 20%;
+        border: 1px solid transparent;
+        background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border-radius: 5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s;
+        transform: scale(0.5s);
+        margin-bottom: 30rem;
+        img{
+            padding-top: .5em;
+        }
+        h3{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    .showS{
+        visibility: visible;
+        opacity: 1;
+    }
 }
