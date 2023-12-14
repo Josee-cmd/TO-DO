@@ -46,7 +46,7 @@ body {
   }
   body .main h1 {
     position: relative;
-    padding-left: 1em;
+    padding-left: 5em;
     font-size: 22px;
   }
   body .main__form {
@@ -66,23 +66,23 @@ body {
   }
   body .main__form--inputs--div--action-label-1 {
     position: relative;
-    bottom: 6em;
+    bottom: 5.5em;
   }
   body .main__form--inputs--div--action-label-2 {
     position: relative;
-    bottom: 6em;
+    bottom: 5.5em;
   }
   body .main__form .email {
     position: relative;
-    margin-bottom: 3.8em;
+    bottom: 3.5em;
   }
   body .main__form .pass {
     position: relative;
-    bottom: 3.8em;
+    bottom: 3.5em;
   }
   body .main--buttons {
     position: relative;
-    bottom: 4em;
+    bottom: 2.5em;
   }
 }
 

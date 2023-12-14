@@ -15,7 +15,7 @@ body {
             
             h1{
                 position: relative;
-                padding-left: 1em;
+                padding-left: 5em;
                 font-size: 22px
             }
 
@@ -33,7 +33,7 @@ body {
                         @for $iterador from 1 through 2 {
                             &-label-#{$iterador} {
                                 position: relative;
-                                bottom: 6em;
+                                bottom:5.5em;
                             }
                         }
         
@@ -42,17 +42,17 @@ body {
 
                 .email{
                     position: relative;
-                    margin-bottom: 3.8em
+                    bottom: 3.5em
                 }
                 .pass{
                     position: relative;
-                    bottom: 3.8em
+                    bottom: 3.5em
                 }
             }
 
             &--buttons{
                 position: relative;
-                bottom: 4em
+                bottom: 2.5em
             }
         }
     }
