@@ -13,7 +13,7 @@ body {
     font-weight: 100;
     overflow: hidden;
 
-    @media (max-width:800px) {
+    @media (max-width:700px) {
         .nav {
             visibility: hidden;
             opacity: 0;
@@ -75,10 +75,12 @@ body {
 
             .menu {
                 position: absolute;
-                margin-right: 24em;
+                right: 24.2em;
                 margin-bottom: 36em;
                 visibility: visible;
                 opacity: 1;
+                display: flex;
+
             }
 
             #miLista {
