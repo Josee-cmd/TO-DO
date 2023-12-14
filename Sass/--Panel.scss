@@ -13,7 +13,7 @@ body {
     font-weight: 100;
     overflow: hidden;
 
-    @media (max-width:820px) {
+    @media (max-width:720px) {
         .nav {
             visibility: hidden;
             opacity: 0;
@@ -21,8 +21,9 @@ body {
             height: 0em;
             .close{
                 position: relative;
-                margin-left: 23em;
-
+                margin-left: 20em;
+                visibility: visible;
+                opacity: 1;
             }
 
             .data{
@@ -34,7 +35,7 @@ body {
             position: relative;
             visibility: visible;
             opacity: 1;
-            height: 46.5rem;
+            height: 100.5rem;
         }
 
         .section {
@@ -136,10 +137,7 @@ body {
                     color: #fff;
                     font-size: 14px;
                 }
-
-
             }
-
             .showS {
                 visibility: visible;
                 opacity: 1;
