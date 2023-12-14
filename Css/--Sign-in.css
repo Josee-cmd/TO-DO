@@ -38,6 +38,53 @@ body {
   background-color: rgb(244, 244, 244);
   margin: 5% 0%;
 }
+@media (max-width: 720px) {
+  body .main {
+    width: 350px;
+    height: 300px;
+    margin-top: 3%;
+  }
+  body .main h1 {
+    position: relative;
+    padding-left: 1em;
+    font-size: 22px;
+  }
+  body .main__form {
+    position: absolute;
+  }
+  body .main__form--inputs--div {
+    margin-top: 8rem;
+  }
+  body .main__form--inputs--div--action {
+    display: block;
+    width: 15em;
+    border: 0px;
+    border-bottom: 3px solid #000;
+    background: none;
+    margin-top: 3em;
+    outline: 0px;
+  }
+  body .main__form--inputs--div--action-label-1 {
+    position: relative;
+    bottom: 6em;
+  }
+  body .main__form--inputs--div--action-label-2 {
+    position: relative;
+    bottom: 6em;
+  }
+  body .main__form .email {
+    position: relative;
+    margin-bottom: 3.8em;
+  }
+  body .main__form .pass {
+    position: relative;
+    bottom: 3.8em;
+  }
+  body .main--buttons {
+    position: relative;
+    bottom: 4em;
+  }
+}
 
 .main {
   width: 500px;

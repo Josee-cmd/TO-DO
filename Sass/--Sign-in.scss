@@ -8,6 +8,54 @@ body {
     @include MixinFunc.create-flexbox(center);
     background-color: rgb(244, 244, 244);
     margin: 5% 0%;
+
+    @media (max-width:720px) {
+        .main{
+            @include MixinFunc.sizeContainer(350px, 300px);
+            
+            h1{
+                position: relative;
+                padding-left: 1em;
+                font-size: 22px
+            }
+
+            &__form {
+                position: absolute;
+                &--inputs--div {
+                    margin-top: 8rem;
+                    &--action {
+                        display: block;
+                        @include MixinFunc.arreglar-inputs(15em);
+                        background: none;
+                        margin-top: 3em;
+                        outline: 0px;
+        
+                        @for $iterador from 1 through 2 {
+                            &-label-#{$iterador} {
+                                position: relative;
+                                bottom: 6em;
+                            }
+                        }
+        
+                    }
+                }
+
+                .email{
+                    position: relative;
+                    margin-bottom: 3.8em
+                }
+                .pass{
+                    position: relative;
+                    bottom: 3.8em
+                }
+            }
+
+            &--buttons{
+                position: relative;
+                bottom: 4em
+            }
+        }
+    }
 }
 
 .main {
