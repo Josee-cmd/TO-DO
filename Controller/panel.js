@@ -4,6 +4,10 @@ const div = document.querySelector('.div');
 const bom = document.querySelector('.bom');
 const sug = document.querySelector('.sug');
 const sugerencias = document.querySelector('.sugerencias');
+const h5 = document.querySelector('.h5');
+const menu = document.querySelector('.menu'),
+    nav = document.querySelector('.nav'),
+    close = document.querySelector('.close');
 // Lista de tareas diarias
 var tareasDiarias = [
     "Desayunar saludablemente",
@@ -120,7 +124,12 @@ function obtenerTareaAleatoria(listaTareas) {
     var indiceAleatorio = Math.floor(Math.random() * listaTareas.length);
     return listaTareas[indiceAleatorio];
 }
-
+close.addEventListener('click',()=>{
+    nav.classList.toggle('showNav');
+})
+menu.addEventListener('click', () => {
+    nav.classList.toggle('showNav');
+})
 bom.addEventListener('click', () => {
     // Obtener una tarea aleatoria
     var tareaAleatoria = obtenerTareaAleatoria(tareasDiarias);
@@ -128,23 +137,25 @@ bom.addEventListener('click', () => {
     // Agregar la tarea a sug y esperar un segundo
     new Promise((resolve, reject) => {
         setTimeout(() => {
+            h5.style.display = 'block'
             sugerencias.classList.toggle('showS');
             sugerencias.style.transform = 'scale(1)';
             sug.innerHTML = tareaAleatoria;
             resolve();
         }, 0);
     })
-    // Después de otro segundo, limpiar el contenido de sug
-    .then(() => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                sugerencias.classList.toggle('showS');
-                sugerencias.style.transform = 'scale(0.5)';
-                sug.innerHTML = '';
-                resolve();
-            }, 3000);
+        // Después de otro segundo, limpiar el contenido de sug
+        .then(() => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    h5.style.display = 'none'
+                    sugerencias.classList.toggle('showS');
+                    sugerencias.style.transform = 'scale(0.5)';
+                    sug.innerHTML = '';
+                    resolve();
+                }, 3000);
+            });
         });
-    });
 });
 
 
