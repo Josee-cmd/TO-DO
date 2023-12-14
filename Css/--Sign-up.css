@@ -37,6 +37,48 @@ body {
   justify-content: center;
   background-color: rgb(244, 244, 244);
 }
+@media (max-width: 720px) {
+  body .main {
+    display: flex;
+  }
+  body .main__form {
+    position: absolute;
+  }
+  body .main .email {
+    position: relative;
+    width: 15em;
+    border: 0px;
+    border-bottom: 3px solid #000;
+    bottom: 1.5em;
+  }
+  body .main .pass {
+    position: relative;
+    width: 15em;
+    border: 0px;
+    border-bottom: 3px solid #000;
+    bottom: 5em;
+  }
+  body .main .spanP {
+    position: relative;
+    bottom: 3em;
+  }
+  body .main .ina {
+    position: relative;
+    top: 0.5em;
+    right: 13.5em;
+  }
+  body .main .lastName {
+    position: relative;
+    top: 1.5em;
+  }
+  body .main .n {
+    position: relative;
+    right: 13.6em;
+  }
+  body .main h1 {
+    padding-left: 4.5em;
+  }
+}
 
 .main {
   width: 500px;

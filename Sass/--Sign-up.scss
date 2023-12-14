@@ -1,12 +1,58 @@
 @use 'MixinFunc';
 @use '_MixinButtons';
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
 
 }
+
 body {
     @include MixinFunc.create-flexbox(center);
     background-color: rgb(244, 244, 244);
+
+    @media (max-width:720px) {
+        .main{
+            display: flex;
+            &__form{
+                position: absolute;
+            }
+
+            .email{
+                position: relative;
+                @include MixinFunc.arreglar-inputs(15em);
+                bottom:1.5em
+            }
+            .pass{
+                position: relative;
+                @include MixinFunc.arreglar-inputs(15em);
+                bottom: 5em;
+            }
+            .spanP{
+                position: relative;
+                bottom: 3em;
+            }
+
+            .ina{
+                position: relative;
+                top: .5em;
+                right: 13.5em;
+            }
+
+            .lastName{
+                position: relative;
+                top: 1.5em;
+            }
+            .n{
+                position: relative;
+                right: 13.6em
+            }
+
+            h1{
+                padding-left: 4.5em
+            }
+        }
+
+    }
 }
 
 .main {
